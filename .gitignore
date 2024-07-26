@@ -1,8 +1,16 @@
+# 확장자가 없는 모든 파일을 제외
+*
+!*/
+!*.*
+
+# 특정 이름의 .dSYM 디렉토리 제외 (선택적)
+basic/*.dSYM
+
 # Prerequisites
 *.d
 
 # Object files
-*.o
+basic/*.o
 *.ko
 *.obj
 *.elf
@@ -50,3 +58,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+.vscode
+.vscode/tasks.json
